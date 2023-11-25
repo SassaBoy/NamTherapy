@@ -610,75 +610,50 @@ body {
   padding: 0;
 }
 
-/* Therapy Section Styles */
+/* Add your existing CSS styles here */
+
+/* Section styles */
 .therapy-section {
   background-color: #f8f8f8;
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
+/* Heading styles */
 .section-heading {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
-.section-heading h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.section-heading p {
-  color: #777;
-  font-size: 16px;
-}
-
+/* Therapy cards styles */
 .therapy-cards {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .therapy-card {
+  width: 45%;
+  margin-bottom: 20px;
+  padding: 20px;
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  flex-basis: calc(25% - 30px);
-  padding: 30px;
-  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .therapy-card img {
   max-width: 100%;
-  border-radius: 5px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
-.therapy-card h3 {
-  font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+/* Responsive styles */
+@media screen and (max-width: 767px) {
+  .therapy-card {
+    width: 100%;
+  }
 }
 
-.therapy-card p {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.therapy-card a {
-  display: inline-block;
-  text-decoration: none;
-  color: #3498db;
-  font-weight: bold;
-}
-
-.therapy-card a:hover {
-  color: #2980b9;
-}
 
 .team_section {
   background-color: #c6003b;
@@ -889,7 +864,7 @@ body {
 
 .contact_section .form_container input {
   width: 100%;
-  border: 1px solid black;
+  border: 0.5px solid #333; /* Change the color to a darker shade, like #333 */
   height: 50px;
   margin-bottom: 25px;
   padding-left: 15px;
@@ -897,6 +872,7 @@ body {
   outline: none;
   color: #101010;
 }
+
 
 .contact_section .form_container input::-webkit-input-placeholder {
   color: black;
@@ -1158,4 +1134,83 @@ body {
 .footer_section p a {
   color: inherit;
 }
-/*# sourceMappingURL=style.css.map */
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section styles */
+.therapy_info_section {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+}
+
+/* Contact details styles */
+.therapy_info_contact p {
+  margin-bottom: 10px;
+}
+
+.social_box a {
+  margin-right: 10px;
+  color: #555;
+}
+
+/* Quick links styles */
+.therapy_info_links_menu a {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.therapy_info_links_menu a:hover {
+  color: #c6003b;
+}
+
+/* Featured therapies and latest news styles */
+.therapy_info_post h5 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.post_box p {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 767px) {
+  .therapy_info_main_row {
+    flex-direction: column;
+  }
+
+  .col-md-6 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Add this to your existing styles or create a new section for it */
+
+.navbar-logo-text {
+  font-size: 1.5rem;
+  margin-left: 50px;
+  font-weight: bold;
+  color: black; /* Set your desired color */
+  display: flex;
+  align-items: center;
+}
+
+.logo-colored-text {
+  color: white; /* Set your desired color for the 'Logo' part */
+  margin-left: 5px; /* Adjust as needed for spacing between words */
+}
+
+/* Move navigation links to the right on larger screens */
+@media (min-width: 992px) {
+  .navbar-nav {
+    margin-left: auto;
+  }
+}
